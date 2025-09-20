@@ -17,6 +17,7 @@ init: false
 map:
 - type: addon_config
   path: /config/data
+  read_only: False
 - type: ssl
 ingress: true
 ingress_port: 80
