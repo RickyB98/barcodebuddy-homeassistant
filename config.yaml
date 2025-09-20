@@ -15,8 +15,9 @@ arch:
 boot: auto
 init: false
 map:
-- config:rw
-- ssl
+- type: addon_config
+  path: /config/data
+- type: ssl
 ingress: true
 ingress_port: 80
 options:
