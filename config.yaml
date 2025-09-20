@@ -3,8 +3,8 @@ name: Barcode Buddy for Grocy
 version: dev-docker-based
 slug: bbuddy-grocy
 description: Barcode system for Grocy
-url: https://github.com/Forceu/barcodebuddy
-webui: http://[HOST]:[PORT:80]
+url: https://github.com/rickyb98/barcodebuddy
+#webui: http://[HOST]:[PORT:80]
 panel_icon: mdi:barcode-scan
 startup: system
 arch:
@@ -17,10 +17,8 @@ init: false
 map:
 - config:rw
 - ssl
-ports:
-  80/tcp: 8621
-ports_description:
-  80/tcp: Web interface
+ingress: true
+ingress_port: 80
 options:
   require_api_key: false
   disable_auth: false
